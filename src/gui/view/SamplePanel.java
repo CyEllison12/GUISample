@@ -21,7 +21,7 @@ public class SamplePanel extends JPanel
 		this.appController = appController;
 		appLayout = new SpringLayout();
 		this.textLabel = new JLabel("THIS IS A COLOR APP!");
-		appLayout.putConstraint(SpringLayout.EAST, textLabel, -117, SpringLayout.EAST, this);
+		
 		
 		setupPanel();
 		setupLayout();
@@ -46,6 +46,7 @@ public class SamplePanel extends JPanel
 		appLayout.putConstraint(SpringLayout.SOUTH, colorButton, -146, SpringLayout.SOUTH, this);
 		appLayout.putConstraint(SpringLayout.NORTH, textLabel, 26, SpringLayout.SOUTH, colorButton);
 		appLayout.putConstraint(SpringLayout.WEST, colorButton, 77, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.EAST, textLabel, -117, SpringLayout.EAST, this);
 	}
 	
 	private void setupListeners()
